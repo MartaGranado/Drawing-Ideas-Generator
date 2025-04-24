@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Generator</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <nav class="navbar" id="navbar"> 
+        <h1 id="title">𝓓𝓡𝓐𝓦𝓘𝓝𝓖 𝓘𝓓𝓔𝓐 𝓖𝓔𝓝𝓔𝓡𝓐𝓣𝓞𝓡</h1>
+        <label for="language-selector">Language:</label>
+        <select id="language-selector">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+    </nav>
+    
+</head>
+<body>
+    <h1></h1>
+    <div id="generator">
+        <div class="category" data-type="background">
+            <span>Background:</span>
+            <button class="generate">Generate!</button>
+            <span class="result"></span>
+            <button class="retry hidden">Retry</button>
+            <span class="retries hidden">Nº of retries: 0</span>
+        </div>
+        <div class="category" data-type="foreground1">
+            <span>Foreground Element 1:</span>
+            <button class="generate">Generate!</button>
+            <span class="result"></span>
+            <button class="retry hidden">Retry</button>
+            <span class="retries hidden">Nº of retries: 0</span>
+        </div>
+        <div class="category" data-type="foreground2">
+            <span>Foreground Element 2:</span>
+            <button class="generate">Generate!</button>
+            <span class="result"></span>
+            <button class="retry hidden">Retry</button>
+            <span class="retries hidden">Nº of retries: 0</span>
+        </div>
+        <div class="category" data-type="sky" style="background-color: rgb(163, 163, 162);">
+            <span>Sky Element:</span>
+            <button class="generate">Generate!</button>
+            <span class="result"></span>
+            <button class="retry hidden">Retry</button>
+            <span class="retries hidden">Nº of retries: 0</span>
+        </div>
+        <div class="category" data-type="land" style="background-color: rgb(163, 163, 162);">
+            <span>Land Element:</span>
+            <button class="generate">Generate!</button>
+            <span class="result"></span>
+            <button class="retry hidden">Retry</button>
+            <span class="retries hidden">Nº of retries: 0</span>
+        </div>
+        <div class="category" data-type="water" style="background-color: rgb(163, 163, 162);">
+            <span>Water Element:</span>
+            <button class="generate">Generate!</button>
+            <span class="result"></span>
+            <button class="retry hidden">Retry</button>
+            <span class="retries hidden">Nº of retries: 0</span>
+        </div>
+        <div class="category" data-type="color-palette">
+            <span>Color Palette:</span>
+            <div class="input-container">
+                <label for="colorCount">Nº colors:</label>
+                <input type="number" min="1" max="12" value="6" id="colorCount">
+            </div>
+            <button class="generate">Generate!</button>
+            <div class="palette"></div>
+            <button class="retry hidden">Retry</button>
+            <span class="retries hidden">Nº of retries: 0</span>
+        </div>
+        
+    </div>
+    <script src="Scripts/categories.js"></script>
+    <script src="Scripts/translations.js"></script>
+    <script src="Scripts/generationsAndButtons.js"></script>
+    
+</body>
+</html>
